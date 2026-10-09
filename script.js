@@ -43,6 +43,7 @@ function renderMenu(){
 }
 
 
+
 function activate(id) {
   const strip = document.querySelector('#categoryStrip');
   if (!strip) return;
@@ -58,19 +59,7 @@ function activate(id) {
     link.classList.toggle('active', link === activeLink);
   });
 
-  const stripRect = strip.getBoundingClientRect();
-  const linkRect = activeLink.getBoundingClientRect();
-
-  const difference =
-    linkRect.left + linkRect.width / 2 -
-    (stripRect.left + stripRect.width / 2);
-
-  if (Math.abs(difference) > 2) {
-    strip.scrollBy({
-      left: difference,
-      behavior: 'smooth'
-    });
-  }
+  // لا تحرك الصفحة أو شريط الأقسام تلقائيًا
 }
 
 function initSectionSpy(){

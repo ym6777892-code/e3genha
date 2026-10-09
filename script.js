@@ -42,11 +42,35 @@ function renderMenu(){
   initSectionSpy();
 }
 
-function activate(id){
-  const strip=$('#categoryStrip');
-  strip.querySelectorAll('.category-link').forEach(l=>l.classList.toggle('active',l.dataset.target===id));
-  const activeLink=strip.querySelector('.category-link.active');
-  if(activeLink)activeLink.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+
+function activate(id) {
+  const strip = document.querySelector('#categoryStrip');
+  if (!strip) return;
+
+  const links = strip.querySelectorAll('.category-link');
+  const activeLink = strip.querySelector(
+    `.category-link[data-target="${id}"]`
+  );
+
+  if (!activeLink) return;
+
+  links.forEach(link => {
+    link.classList.toggle('active', link === activeLink);
+  });
+
+  const stripRect = strip.getBoundingClientRect();
+  const linkRect = activeLink.getBoundingClientRect();
+
+  const difference =
+    linkRect.left + linkRect.width / 2 -
+    (stripRect.left + stripRect.width / 2);
+
+  if (Math.abs(difference) > 2) {
+    strip.scrollBy({
+      left: difference,
+      behavior: 'smooth'
+    });
+  }
 }
 
 function initSectionSpy(){

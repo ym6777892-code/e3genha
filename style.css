@@ -121,7 +121,8 @@ img{max-width:100%}
   .brand-logo{width:46px;height:46px}
   .brand-name{font-size:14px}
   .desktop-nav{display:none}
-  .hero{min-height:560px;height:640px;background-position:55% center}
+  .hero{min-height:560px;height:640px;
+background: #21130c url('e3genha.jpg') center center / contain no-repeat;
   .hero-content{width:86%;margin-inline-start:6%;padding-top:30px}
   .hero h1{font-size:clamp(44px,12vw,66px)}
   .hero-copy{font-size:13px}

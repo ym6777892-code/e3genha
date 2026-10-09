@@ -615,3 +615,14 @@ img{
     padding:26px 5%;
   }
 }
+.menu-heading > p {
+  font-size: 14px;
+  font-weight: 800;
+  color: #f3e5d0;
+  background: rgba(228, 196, 154, 0.10);
+  border: 1px solid rgba(228, 196, 154, 0.35);
+  border-radius: 6px;
+  padding: 10px 14px;
+  display: inline-block;
+  line-height: 1.8;
+} 

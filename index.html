@@ -1,236 +1,121 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="استكشف منيو E3GENHA — مناقيش، بيتزا إيطالي، فطير شرقي، حلويات وإضافات، بالإضافة إلى عروضنا المميزة.">
-  <meta name="theme-color" content="#21130c">  <title>E3GENHA | Menu & Offers</title>  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
-</head><body>  <!-- Header -->  <header class="topbar"><a class="brand" href="#home" aria-label="E3GENHA home">
-  <img
-    class="brand-logo"
-    src="e3genha.jpg"
-    alt="E3GENHA logo"
-    width="54"
-    height="54"
-  >
+  <meta name="theme-color" content="#21130c">
+  <title>E3GENHA | Menu & Offers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <span class="brand-name">
-    E3GENHA
-    <small>MENU</small>
-  </span>
-</a>
-
-<nav class="desktop-nav" aria-label="Main navigation">
-  <a href="#menu" data-i18n="navMenu">المنيو</a>
-  <a href="#about" data-i18n="navAbout">عن E3GENHA</a>
-</nav>
-
-<button
-  id="languageToggle"
-  class="language-toggle"
-  type="button"
-  aria-label="Change language"
->
-  EN <span>↗</span>
-</button>
-
-  </header>  <main><!-- Hero -->
-<section id="home" class="hero">
-
-  <div class="hero-shade"></div>
-
-  <div class="hero-content">
-
-    <p class="eyebrow" data-i18n="heroEyebrow">
-      طازة من الفرن، معمولة بحب
-    </p>
-
-    <h1 data-i18n="heroTitle">
-      كل قضمة<br>
-      <em>لها حكاية.</em>
-    </h1>
-
-    <p class="hero-copy" data-i18n="heroCopy">
-      اكتشف عالم من المناقيش، البيتزا الإيطالي والفطير الشرقي — اختيارات ترضي كل مزاج.
-    </p>
-
-    <a class="primary-link" href="#menu">
-      <span data-i18n="exploreMenu">استكشف المنيو</span>
-      <b>↙</b>
+  <!-- Header -->
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="E3GENHA home">
+      <img class="brand-logo" src="e3genha.jpg" alt="E3GENHA logo" width="54" height="54">
+      <span class="brand-name">E3GENHA<small>MENU</small></span>
     </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#menu" data-i18n="navMenu">المنيو</a>
+      <a href="#about" data-i18n="navAbout">عن E3GENHA</a>
+    </nav>
+    <button id="languageToggle" class="language-toggle" type="button" aria-label="Change language">EN <span>↗</span></button>
+  </header>
 
-  </div>
+  <main>
 
-  <div class="hero-caption">
-    <span>01 / 05</span>
-    <span data-i18n="heroCaption">صناعة طعم مايتنسيش</span>
-  </div>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="heroEyebrow">طازة من الفرن، معمولة بحب</p>
+        <h1 data-i18n="heroTitle">كل قضمة<br><em>لها حكاية.</em></h1>
+        <p class="hero-copy" data-i18n="heroCopy">اكتشف عالم من المناقيش، البيتزا الإيطالي والفطير الشرقي — اختيارات ترضي كل مزاج.</p>
+        <a class="primary-link" href="#menu"><span data-i18n="exploreMenu">استكشف المنيو</span><b>↙</b></a>
+      </div>
+      <div class="hero-caption">
+        <span>01 / 05</span>
+        <span data-i18n="heroCaption">صناعة طعم مايتنسيش</span>
+      </div>
+      <div class="hero-vertical">FRESHLY BAKED · MADE TO SHARE</div>
+    </section>
 
-  <div class="hero-vertical">
-    FRESHLY BAKED · MADE TO SHARE
-  </div>
+    <!-- Special Offers Banner -->
+    <section class="offers-banner section-wrap" aria-label="Special offers">
+      <div class="offers-banner-copy">
+        <span class="offers-eyebrow" data-i18n="offersEyebrow">SPECIAL OFFER · عرض مميز</span>
+        <h2 data-i18n="offersTitle">عروض اعجنها 🔥</h2>
+        <p data-i18n="offersDescription">3 بيتزا بتحبهم، بسعر أحلى!</p>
+      </div>
+      <a href="#offers" class="offers-banner-button" id="offersBannerButton">
+        <span data-i18n="offersButton">اكتشف العرض</span>
+        <span aria-hidden="true">←</span>
+      </a>
+    </section>
 
-</section>
-
-<!-- Special Offers Banner -->
-<section
-  class="offers-banner section-wrap"
-  aria-label="Special offers"
->
-
-  <div class="offers-banner-copy">
-
-    <span class="offers-eyebrow" data-i18n="offersEyebrow">
-      SPECIAL OFFER · عرض مميز
-    </span>
-
-    <h2 data-i18n="offersTitle">
-      عروض اعجنها 🔥
-    </h2>
-
-    <p data-i18n="offersDescription">
-      3 بيتزا بتحبهم، بسعر أحلى!
-    </p>
-
-  </div>
-
-  <a
-    href="#offers"
-    class="offers-banner-button"
-    id="offersBannerButton"
-  >
-    <span data-i18n="offersButton">اكتشف العرض</span>
-    <span aria-hidden="true">←</span>
-  </a>
-
-</section>
-
-<!-- About -->
-<section class="intro section-wrap" id="about">
-
-  <div class="section-kicker">
-    <span>01</span>
-
-    <span data-i18n="ourMenu">
-      منيو E3GENHA
-    </span>
-  </div>
-
-  <div class="intro-grid">
-
-    <h2 data-i18n="introTitle">
-      اختار اللي<br>
-      <em>على مزاجك.</em>
-    </h2>
-
-    <p data-i18n="introCopy">
-      من أول المناقيش بالزعتر لحد الفطير الحلو، جمعنالك اختياراتنا في مكان واحد. اتصفح الأقسام واكتشف تفاصيل المنيو.
-    </p>
-
-  </div>
-
-</section>
-
-<!-- Menu -->
-<section id="menu" class="menu-section section-wrap">
-
-  <div class="menu-heading">
-
-    <div class="menu-heading-title">
-
+    <!-- About -->
+    <section class="intro section-wrap" id="about">
       <div class="section-kicker">
-        <span>02</span>
+        <span>01</span>
+        <span data-i18n="ourMenu">منيو E3GENHA</span>
+      </div>
+      <div class="intro-grid">
+        <h2 data-i18n="introTitle">اختار اللي<br><em>على مزاجك.</em></h2>
+        <p data-i18n="introCopy">من أول المناقيش بالزعتر لحد الفطير الحلو، جمعنالك اختياراتنا في مكان واحد. اتصفح الأقسام واكتشف تفاصيل المنيو.</p>
+      </div>
+    </section>
 
-        <span data-i18n="theSelection">
-          اختياراتنا
-        </span>
+    <!-- Menu -->
+    <section id="menu" class="menu-section section-wrap">
+      <div class="menu-heading">
+        <div class="menu-heading-title">
+          <div class="section-kicker">
+            <span>02</span>
+            <span data-i18n="theSelection">اختياراتنا</span>
+          </div>
+          <h2 class="menu-brand-title">E3GENHA <em>MENU</em></h2>
+        </div>
+        <p class="vat-notice" data-i18n="vatNote">الأسعار لا تشمل ضريبة القيمة المضافة.</p>
       </div>
 
-      <h2 class="menu-brand-title">
-        E3GENHA <em>MENU</em>
-      </h2>
+      <!-- Menu Categories -->
+      <nav class="category-bar" aria-label="Menu categories">
+        <div class="category-strip" id="categoryStrip"></div>
+      </nav>
 
-    </div>
+      <!-- Menu Content -->
+      <div id="menuContent" class="menu-content"></div>
 
-    <p class="vat-notice" data-i18n="vatNote">
-      الأسعار لا تشمل ضريبة القيمة المضافة.
-    </p>
+      <p class="price-warning" data-i18n="priceWarning">بعض الأسعار في نسخة المنيو الأصلية غير واضحة؛ الأصناف المتأثرة موضّحة بدون سعر لحين التأكيد.</p>
+    </section>
 
-  </div>
+    <!-- Closing Banner -->
+    <section class="closing-banner">
+      <div class="closing-copy">
+        <p class="eyebrow" data-i18n="closingEyebrow">من الفرن على طول</p>
+        <h2 data-i18n="closingTitle">الطعم الحلو<br><em>يستاهل وقتك.</em></h2>
+        <p data-i18n="closingCopy">خد وقتك في الاختيار، والمنيو كله قدامك.</p>
+        <a href="#menu" class="text-link"><span data-i18n="backToMenu">ارجع للمنيو</span> ↗</a>
+      </div>
+    </section>
 
-  <!-- Menu Categories -->
-  <nav class="category-bar" aria-label="Menu categories">
+  </main>
 
-    <div
-      class="category-strip"
-      id="categoryStrip"
-    ></div>
-
-  </nav>
-
-  <!-- Menu Content -->
-  <div
-    id="menuContent"
-    class="menu-content"
-  ></div>
-
-  <p class="price-warning" data-i18n="priceWarning">
-    بعض الأسعار في نسخة المنيو الأصلية غير واضحة؛ الأصناف المتأثرة موضّحة بدون سعر لحين التأكيد.
-  </p>
-
-</section>
-
-<!-- Closing Banner -->
-<section class="closing-banner">
-
-  <div class="closing-copy">
-
-    <p class="eyebrow" data-i18n="closingEyebrow">
-      من الفرن على طول
-    </p>
-
-    <h2 data-i18n="closingTitle">
-      الطعم الحلو<br>
-      <em>يستاهل وقتك.</em>
-    </h2>
-
-    <p data-i18n="closingCopy">
-      خد وقتك في الاختيار، والمنيو كله قدامك.
-    </p>
-
-    <a href="#menu" class="text-link">
-      <span data-i18n="backToMenu">ارجع للمنيو</span>
-      ↗
+  <!-- Footer -->
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home">
+      <img class="brand-logo" src="e3genha.jpg" alt="E3GENHA logo" width="42" height="42">
+      <span class="brand-name">E3GENHA<small>MENU</small></span>
     </a>
+    <p data-i18n="footerNote">الأسعار بالجنيه المصري ما لم يُذكر غير ذلك.</p>
+    <a href="#home" class="back-top" data-i18n="backTop">العودة للأعلى ↑</a>
+  </footer>
 
-  </div>
-
-</section>
-
-  </main>  <!-- Footer -->  <footer class="footer"><a class="brand footer-brand" href="#home">
-
-  <img
-    class="brand-logo"
-    src="e3genha.jpg"
-    alt="E3GENHA logo"
-    width="42"
-    height="42"
-  >
-
-  <span class="brand-name">
-    E3GENHA
-    <small>MENU</small>
-  </span>
-
-</a>
-
-<p data-i18n="footerNote">
-  الأسعار بالجنيه المصري ما لم يُذكر غير ذلك.
-</p>
-
-<a href="#home" class="back-top" data-i18n="backTop">
-  العودة للأعلى ↑
-</a>
-
-  </footer>  <!-- JavaScript -->  <script src="script.js"></script></body>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
 </html>
